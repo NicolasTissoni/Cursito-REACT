@@ -2,6 +2,7 @@ import React from "react";
 import '../scss/Tuvieja.scss';
 
 function Tuvieja(props) {
+  console.log('hola');
   return (
     <div className="contenedor-tuvieja">
       <img
