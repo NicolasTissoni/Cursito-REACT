@@ -1,13 +1,12 @@
 import React from "react";
-import '../scss/Tuvieja.scss';
+import './tuVieja.scss';
 
 function Tuvieja(props) {
-  console.log('hola');
   return (
     <div className="contenedor-tuvieja">
       <img
         className="imagen-tuvieja"
-        src={require(`../imagenes/Perrito-${props.imagen}.jpg`)}
+        src={require(`../images/Perrito-${props.imagen}.jpg`)}
         alt="Imagen de Perrito"
       />
       <div className="contenedor-texto-tuvieja">
