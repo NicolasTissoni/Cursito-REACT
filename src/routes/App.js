@@ -1,5 +1,6 @@
-import "./App.css";
+import "./App";
 import React, { useEffect, useState } from "react";
+
 
 function App() {
   const [stateCar, setStateCar] = useState(false);
