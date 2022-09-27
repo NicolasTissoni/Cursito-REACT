@@ -1,0 +1,38 @@
+.element {
+    border-radius: 5px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: calc((100% / 4) -20px);
+    padding: 20px;
+    
+    .image {
+        >img {
+            width: 100%;
+        }
+    }
+
+    .name {
+        border-bottom: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .price {
+        margin: 5px auto;
+    }
+    
+    .button {
+        display: block;
+        background-color: black;
+        margin: 0 auto;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
