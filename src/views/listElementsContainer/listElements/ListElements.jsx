@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Elements from '../element/Element';
+import Elements from '../elements/Elements';
 
 import './listElements.scss';
 

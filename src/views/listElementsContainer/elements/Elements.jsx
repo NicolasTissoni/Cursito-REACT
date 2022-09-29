@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './element.scss';
+import ButtonRedirect from '../../../components/buttonRedirect/ButtonRedirect';
 
 const Elements = ({ element }) => {
     return (
@@ -10,7 +10,7 @@ const Elements = ({ element }) => {
             </div>
             <h2 className='name'>{element.name}</h2>
             <h3 className='price'>${element.price}</h3>
-            <Link to={`/element/${element.id}`}className='button'>Ver Detalles</Link>
+            <ButtonRedirect text='Ver Detalles' toLink={`/element/${element.id}`}/>
         </div>
     );
 };

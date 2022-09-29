@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import { useParams } from 'react-router-dom';
 
-import { getElementsById } from '../../components/elements/getElements';
+import { getElementsById } from '../../components/data/elements/getElements';
 
 import Element from './element/Element'
 

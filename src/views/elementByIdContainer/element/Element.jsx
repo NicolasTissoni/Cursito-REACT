@@ -1,19 +1,24 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import './element.scss';
 
+import Count from '../../../components/count/Count' 
+
+import ButtonRedirect from '../../../components/buttonRedirect/ButtonRedirect';
 
 const Element = ({ element }) => {
     return (
-        <div className='element'>
+        <div className='elementSelect'>
             <div className='image'>
                 <img src={element.image} alt={element.name}/>
             </div>
-            <h2 className='name'>{element.name}</h2>
-            <h3 className='price'>${element.price}</h3>
-            <p className='description'>{element.description}</p>
-            <p className='stock'>{element.stock}</p>
-            <Link to='/'>Volver</Link>
+            <div className='contenedor-data'>
+                <h2 className='name'>{element.name}</h2>
+                <p className='description'>{element.description}</p>
+                <h3 className='price'>${element.price}</h3>
+                <Count stock={element.stock}/>
+                <ButtonRedirect text={'Volver'} toLink={`/`}/>
+            </div>
         </div>
     );
 };

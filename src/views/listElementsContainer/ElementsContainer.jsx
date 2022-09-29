@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 
-import { getElementsAll } from "../../components/elements/getElements";
+import { useParams } from 'react-router-dom';
+
+import { getElementsAll } from "../../components/data/elements/getElements";
 
 import ListElements from './listElements/ListElements';
 
-import '../listElementsContainer/listElementsContainer.scss'
+import './ElementsContainer.scss';
 
 const ListElementsContainer = () => {
+  const { category } = useParams();
   const [elements, setElements] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getElementsAll()
+    getElementsAll(category)
       .then((response) => {
         setElements(response);
         setLoading(true);
@@ -20,11 +23,11 @@ const ListElementsContainer = () => {
         console.log(error);
         setLoading(false);
       });
-  }, []);
+  }, [category]);
 
   return (
     <div>
-      <h2 className="title">Graficas</h2>
+      {!category ? <h2 className="title">Lista de Articulos</h2> : <h2 className="title">{category}</h2>};
       {loading ? <ListElements elements={elements} /> : <p>No hay Elementos</p>}
     </div>
   );

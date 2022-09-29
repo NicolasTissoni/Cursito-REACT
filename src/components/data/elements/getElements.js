@@ -1,9 +1,12 @@
-import elements from './elements.json';
+import elements from '../../data/elements/elements.json';
 
-export function getElementsAll() {
+export function getElementsAll(category = null) {
     return new Promise((resolve, reject) => {
-        resolve(elements);
-        reject ('Error');
+        if (category) {
+            resolve(elements.filter(element => element.category === category))
+            resolve(elements);
+            reject ('Error');
+        }
     });
 };
 
