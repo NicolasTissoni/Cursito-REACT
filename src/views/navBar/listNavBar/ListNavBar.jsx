@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import './listNavBar.scss'
 
 import { Link } from 'react-router-dom';
+
+import Context from '../../../context/CartContext'
  
 const ListNavBar = ({ categories }) => {
+    const { values } = useContext(Context);
     return (
         <ul className='list-navbar'>
             {categories.map((categories) => {
@@ -14,6 +17,10 @@ const ListNavBar = ({ categories }) => {
                     </li>
                 );
             })}
+            <Link className='cart-reditect' to={'/cart'}>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>{values.quantity}</p>
+            </Link>
         </ul>
     );
 };

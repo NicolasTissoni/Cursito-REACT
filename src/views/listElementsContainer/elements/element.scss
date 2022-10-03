@@ -2,9 +2,10 @@
     border-radius: 5px;
     border: 2px solid black;
     box-sizing: border-box;
-    width: calc((100% / 4) -20px);
+    width: calc((100% / 3) - 20px);
     padding: 20px;
-    
+    margin: 10px 0;
+
     .image {
         >img {
             width: 100%;
@@ -12,8 +13,8 @@
     }
 
     .name {
-        border-bottom: 1px solid black;
         width: 50%;
+        height: 75px;
         margin: 0 auto;
         padding: 5px;
     }

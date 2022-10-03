@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import getCategories from "../../../components/data/categories/getCategories";
+import getCategories from "../../data/categories/getCategories";
 
 import ListNavBar from './listNavBar/ListNavBar'
 

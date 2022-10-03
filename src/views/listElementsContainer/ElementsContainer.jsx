@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from 'react-router-dom';
 
-import { getElementsAll } from "../../components/data/elements/getElements";
+import { getElementsAll } from "../../data/elements/getElements";
 
 import ListElements from './listElements/ListElements';
 
@@ -27,7 +27,7 @@ const ListElementsContainer = () => {
 
   return (
     <div>
-      {!category ? <h2 className="title">Lista de Articulos</h2> : <h2 className="title">{category}</h2>};
+      {!category ? <h2 className="title">Lista de Articulos</h2> : <h2 className="title">{category}</h2>}
       {loading ? <ListElements elements={elements} /> : <p>No hay Elementos</p>}
     </div>
   );

@@ -26,4 +26,24 @@
             color: white;
         }
     }
+    .cart-reditect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5%;
+        margin: 10px;
+        text-decoration: none;
+        >i, p {
+            color: white;
+        }
+        >p {
+            margin-left: 10px;
+        }
+        &:hover {
+            background-color: white;
+            >i, p {
+                color: black;
+            }
+        }
+    }
 }
