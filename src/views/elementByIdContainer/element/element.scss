@@ -3,7 +3,7 @@
 
 .elementSelect {
     display: flex;
-    margin: 100px auto;
+    margin: 20px auto;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -42,8 +42,17 @@
             font-size: 40px;
         }
         
-        // .buttons {
-            
-        // }
+        
+    }
+}
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    .contain-button {
+        margin: 15px 0;
     }
 }

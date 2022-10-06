@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
-
 import { useParams } from "react-router-dom";
-
 import { getElementsById } from "../../data/elements/getElements";
 
 import Element from "./element/Element";
 
 import Count from "../../components/count/Count";
-import Context from "../../context/CartContext";
 import ButtonRedirect from "../../components/buttonRedirect/ButtonRedirect";
+
+
+import NotificationContext from "../../context/NotificationContext";
+import CartContext from "../../context/CartContext";
 
 const ElementByIdContainer = () => {
   const { id } = useParams();
@@ -16,11 +17,23 @@ const ElementByIdContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const [state, setState] = useState(false);
-  const { addQuantity } = useContext(Context);
+  const { addItemCart } = useContext(CartContext);
+  const { setNotification } = useContext(NotificationContext);
 
   const agregar = (count) => {
-    setState(true);
-    addQuantity(count);
+    let itemCart = addItemCart({ element, count })
+
+    if (itemCart){
+     setNotification(
+      'success', 
+      `Agregada la cantidad de ${count} de ${element.name} a tu carrito`);
+     setState(true);
+    } else {
+      setNotification(
+        'error', 
+        `No hay suficiente stock de ${element.name}`)
+      setState(false);
+    };
   };
 
   useEffect(() => {

@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import './count.scss';
 
 const Count = ({ stock, onAdd }) => {
-  const [contar, setContar] = useState(0);
+  const [contar, setContar] = useState(1);
 
     const restar = () => {
-      if (contar > 0) {
+      if (contar > 1) {
         setContar(contar - 1);
       }
     };
@@ -23,9 +23,11 @@ const Count = ({ stock, onAdd }) => {
 
     return (
       <div className="count">
-        <button onClick={ restar }>-</button>
-        <h2>{ contar }</h2>
-        <button onClick={ sumar }>+</button>
+        <div className="buttonsCount-Container">
+          <button onClick={ restar }>-</button>
+          <h2>{ contar }</h2>
+          <button onClick={ sumar }>+</button>
+        </div>
         <button onClick={agregar} className={'buttonAdd'}>Agregar al Carrito</button>
       </div>
   );

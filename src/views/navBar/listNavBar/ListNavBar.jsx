@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Context from '../../../context/CartContext'
  
 const ListNavBar = ({ categories }) => {
-    const { values } = useContext(Context);
+    const { getCount } = useContext(Context);
     return (
         <ul className='list-navbar'>
             {categories.map((categories) => {
@@ -18,8 +18,8 @@ const ListNavBar = ({ categories }) => {
                 );
             })}
             <Link className='cart-reditect' to={'/cart'}>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>{values.quantity}</p>
+                <i className="fa-solid fa-cart-shopping"></i>
+                <p>{getCount()}</p>
             </Link>
         </ul>
     );

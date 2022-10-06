@@ -4,7 +4,7 @@
     "name": "RTX 3060 Ti",
     "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_29446_Placa_de_Video_Zotac_GeForce_RTX_3060_Ti_8GB_GDDR6_Twin_Edge_OC_LHR_a3e9ba5e-grn.jpg",
     "description": "Placa de Video Zotac GeForce RTX 3060 Ti 8GB GDDR6 Twin Edge OC LHR",
-    "stock": "9",
+    "stock": 9,
     "price": "121.000",
     "category": "Graficas"
   },
@@ -13,7 +13,7 @@
     "name": "RTX 3070 Ti",
     "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34235_Placa_de_Video_Zotac_GeForce_RTX_3070_8GB_GDDR6_Twin_Edge_OC_White_Edition_LHR_4fad0419-grn.jpg",
     "description": "Placa de Video Zotac GeForce RTX 3070 8GB GDDR6 Twin Edge OC White Edition LHR",
-    "stock": "5",
+    "stock": 5,
     "price": "169.000",
     "category": "Graficas"
   },
@@ -22,7 +22,7 @@
     "name": "RTX 3090",
     "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27857_Placa_de_Video_MSI_GeForce_RTX_3090_24GB_GDDR6X_GAMING_X_TRIO_a35b26f2-grn.jpg",
     "description": "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X GAMING X TRIO",
-    "stock": "2",
+    "stock": 2,
     "price": "295.000",
     "category": "Graficas"
   },
