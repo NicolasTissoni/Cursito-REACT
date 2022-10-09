@@ -1,0 +1,68 @@
+.form-container {
+    display: flex;
+    width: 50%;
+    background-color: black;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    padding: 5px 25px 0 25px;
+    border-radius: 25px;
+    user-select: none;
+    justify-content: flex-start;
+    
+    label {
+        background-color: black;;
+        color: white;
+        margin: 10px auto;
+        text-align: center;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+        width: 150px;
+        padding: 5px;
+    }
+
+    input {
+        outline: none;
+        border: 2px solid white;
+        height: 25px;
+        background-color: black;
+        &::placeholder {
+            color:white;
+        }
+    }
+
+    .pago-container {
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        span {
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        i{
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        input {
+            cursor: pointer;
+        }
+
+        .pago1-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .pago2-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+    }
+}

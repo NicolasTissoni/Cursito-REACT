@@ -1,0 +1,42 @@
+.table {
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    
+    .head-table {
+        th {
+            border-bottom: 1px solid black; 
+        }
+    }
+
+    .footer-table {
+        td {
+            background-color: black;
+            color: white;
+            font-weight: 500;
+            padding: 5px;
+        }
+    }
+}
+
+.buttons-cart {
+    text-align: center;
+    margin-top: 20px;
+    
+    .button-eliminar-todo{
+        color: white;
+        background-color: black;
+        border: none;
+        outline: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            background-color: red;
+        }
+    }
+}

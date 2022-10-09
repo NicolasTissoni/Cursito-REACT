@@ -1,15 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 
-import CartContext from "../../context/CartContext";
+import CartContext from '../../context/CartContext';
+
+import ListCart from './listCart/ListCart';
 
 const CartContainer = () => {
     const { values } = useContext(CartContext);
+
     return (
         <div>
-            <h1>CartContainer</h1>
-            <div>
-                
-            </div>
+            {values.itemCart.length > 0 ? (
+                <ListCart items={values.itemCart} />
+            ) : (
+                <h2>No hay elementos, por favor ingresar alguno</h2>
+            )}
         </div>
     );
 };

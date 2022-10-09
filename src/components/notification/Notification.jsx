@@ -12,7 +12,7 @@ const Notification = () => {
 
     return (
         <div className='notification' onClick={() => setNotification('')}>
-            <h1 className={notification.severity}>{notification.message}</h1>
+            <h2 className={notification.severity}>{notification.message}</h2>
         </div>
     );
 };

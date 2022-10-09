@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 
-import './listNavBar.scss'
+import './listNavBar.scss';
 
 import { Link } from 'react-router-dom';
 
-import Context from '../../../context/CartContext'
- 
+import Context from '../../../context/CartContext';
+
 const ListNavBar = ({ categories }) => {
     const { getCount } = useContext(Context);
     return (
-        <ul className='list-navbar'>
+        <ul className="list-navbar">
             {categories.map((categories) => {
                 return (
                     <li key={categories.id}>
@@ -17,7 +17,7 @@ const ListNavBar = ({ categories }) => {
                     </li>
                 );
             })}
-            <Link className='cart-reditect' to={'/cart'}>
+            <Link className="cart-reditect" to={'/cart'}>
                 <i className="fa-solid fa-cart-shopping"></i>
                 <p>{getCount()}</p>
             </Link>
@@ -25,4 +25,4 @@ const ListNavBar = ({ categories }) => {
     );
 };
 
-export default ListNavBar
+export default ListNavBar;

@@ -1,0 +1,18 @@
+.items-container {
+    .button-clear-by-id {
+        width: 35px;
+        button {
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            padding: 10px;
+            transition: .3s;
+            border-radius: 5px;
+        }            
+        :hover {
+            background-color: red;
+        } 
+    }
+}
