@@ -22,15 +22,17 @@ const Checkout = () => {
                     <input type="text" placeholder=' Codigo Postal'/>
                     <div className='pago-container'>
                         <div className='pago1-container'>
-                            <span>Efectivo</span>
+                            <span>EFECTIVO</span>
                             <i className="fa-solid fa-sack-dollar"></i>
                             <input type="radio" name='pago'/>
                         </div>
                         <div className='pago2-container'>    
-                            <span>Tarjeta</span>
+                            <span>TARJETA</span>
                             <i className="fa-solid fa-credit-card"></i>
                             <input type="radio" name='pago'/>
                         </div>
+                    </div>
+                    <div className='button-cont'>
                         <ButtonSimple text='COMPRAR' simpleLink={'/'}/>
                     </div>
                 </div>
