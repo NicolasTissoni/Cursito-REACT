@@ -2,29 +2,49 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    margin: 20px auto;
+    box-sizing: border-box;
+
     .buttonsCount-Container{
         text-align: center;
         display: flex;
         align-items: center;
+        background-color: #0f1a20;
+        border-radius: 25px;
+        height: 50px;
+        
         button{
-            background-color: black;
+            background-color: #0f1a20;
             color: white;
             border: none;
             height: 20px;
             width: 20px;
             margin: 10px;
             cursor: pointer;
+            &:hover {
+                color: rgba(255, 255, 255, 0.377);
+            }
+        }
+
+        h2 {
+            color: white;
         }
     }
         
-    .buttonAdd{
-        width: 130px;
-        padding: 10px;
+    .buttonAdd {
+        width: 150px;
+        padding: 20px;
         margin-top: 10px;
-        background-color: black;
-        border: none;
         color: white;
+        border: none;
+        background-color: #e2856e;
         cursor: pointer;
+        border-radius: 7px;
+
+        &:hover {
+            background-color: #f42c04;
+            color: white;
+            border: none;
+        }
     }
 }

@@ -1,7 +1,7 @@
 
 .notification {
     border-radius: 10px;
-    bottom: 200px;
+    bottom: 95px;
     color: white;
     left: 0;
     margin: 0 auto;
@@ -10,10 +10,13 @@
     position: absolute;
     right: 0;
     z-index: 9999;
+
     h2 {
         text-align: center;
         padding: 10px;
-
+        width: 700px;
+        border-radius: 10px;
+        margin: 0 auto;
         &.success {
             background-color: green;
         }

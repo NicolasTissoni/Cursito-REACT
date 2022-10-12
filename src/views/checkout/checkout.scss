@@ -1,40 +1,53 @@
 .form-container {
     display: flex;
-    width: 50%;
-    background-color: black;
+    width: 30%;
+    background-color: #0f1a20;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 10px auto;
     color: white;
-    padding: 5px 25px 0 25px;
+    padding: 50px 25px 0 25px;
     border-radius: 25px;
     user-select: none;
-    justify-content: flex-start;
+    border: 2px solid white;
     
+    .container-label-input {
+        display: flex;
+        flex-direction: column;
+    }
+
     label {
-        background-color: black;;
+        background-color: #e2856e;
         color: white;
-        margin: 10px auto;
-        text-align: center;
-        border-left: 3px solid white;
-        border-right: 3px solid white;
-        width: 150px;
+        width: 175px;
         padding: 5px;
+        text-align: center; 
+        margin: 5px auto;
+        border: 2px solid white;
+        border-radius: 5px;
     }
 
     input {
         outline: none;
+        padding: 15px;
+        background-color:#88a2aa;
+        color: white;
         border: 2px solid white;
-        height: 25px;
-        background-color: black;
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 10px;
         &::placeholder {
             color:white;
+        }
+        &:focus {
+            background-color: #ada296;
+            color: white;
         }
     }
 
     .pago-container {
         display: flex;
         margin: 20px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
 
@@ -50,13 +63,19 @@
 
         input {
             cursor: pointer;
+            width: 10px;
         }
 
         .pago1-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 150px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100px;
+            background-color: #e2856e;
+            margin: 0 5px;
+            border: 2px solid white;
             &:hover {
                 background-color: green;
             }
@@ -66,14 +85,32 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 150px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100px;
+            background-color: #e2856e;
+            margin: 0 5px;
+            border: 2px solid white;
             &:hover {
                 background-color: blue;
             }
         }
     }
+
     .button-cont {
         text-align: center;
-        padding: 40px;
+        padding: 10px;
+        margin-bottom: 30px;
+        
+        .button {
+            background-color: #e2856e;
+            color: white;
+            
+            &:hover {
+                background-color: green;
+                color: white;
+                border: none;
+            }
+        }
     }
 }

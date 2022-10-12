@@ -1,33 +1,76 @@
+.cartContainer-sin-elementos {
+    margin: 80px auto;
+}
+
+
+.lista-de-productos-container {
+    margin-bottom: 20px;
+    margin: 90px auto;
+    h2 {
+        margin: 10px auto;
+    }
+}
+
 .table {
     margin: 0 auto;
-    border: 2px solid black;
+    border: 5px solid #0f1a20;
     padding: 10px;
     text-align: center;
     width: 50%;
+    margin: 20px auto;
+    background-color: #0f1a20;
+    border-radius: 20px;
     
     .head-table {
         th {
-            border-bottom: 1px solid black; 
+            color: white;
+            background-color: #88a2aa; 
+            padding: 5px;
+        }
+        th:first-child{
+            border-left: 5px solid white;
+        }
+    }   
+
+    .body-table {
+        color: white;
+        background-color: #88a2aa57;
+
+        td:first-child{
+            border-left: 5px solid white;
+        }
+
+        td:nth-child(2){
+            background-color: #ada296;
+            border-left: 3px solid white;
+        }
+
+        td:nth-child(3){
+            background-color: #e2856e;
         }
     }
 
     .footer-table {
         td {
-            background-color: black;
+            background-color: #88a2aa;
             color: white;
             font-weight: 500;
             padding: 5px;
+            
+        }
+        td:first-child{
+            border-left: 5px solid white;
         }
     }
 }
 
 .buttons-cart {
-    text-align: center;
     margin-top: 20px;
-    
+    text-align: center;
     .button-eliminar-todo{
+        
         color: white;
-        background-color: black;
+        background-color: #e2856e;
         border: none;
         outline: none;
         padding: 10px 30px;
@@ -39,4 +82,18 @@
             background-color: red;
         }
     }
+
+    a.button {
+        background-color: #e2856e;
+        &:hover {
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
 }

@@ -8,7 +8,7 @@ const CartContainer = () => {
     const { values } = useContext(CartContext);
 
     return (
-        <div>
+        <div className='cartContainer-sin-elementos'>
             {values.itemCart.length > 0 ? (
                 <ListCart items={values.itemCart} />
             ) : (

@@ -26,7 +26,7 @@ const ListElementsContainer = () => {
   }, [category]);
 
   return (
-    <div>
+    <div className="container-home">
       {!category ? <h2 className="title">Lista de Articulos</h2> : <h2 className="title">{category}</h2>}
       {loading ? <ListElements elements={elements} /> : <p>No hay Elementos</p>}
     </div>

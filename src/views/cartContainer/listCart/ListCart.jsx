@@ -9,10 +9,11 @@ const ListCart = ({ items }) => {
     const { getTotal, clearItems } = useContext(CartContext);
 
     return (
-        <div>
-            <h2 className='title'>Lista de productos</h2>
-
+        <div className='lista-de-productos-container'>
+            <h2 className='title'>Carrito</h2>
+        
             <table className='table'>
+                
                 <thead>
                     <tr className='head-table'>
                         <th>Producto</th>
@@ -21,7 +22,7 @@ const ListCart = ({ items }) => {
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody className='body-table'>
                     {items.map((item) => {
                         return <ElementCart item={item} key={item.element.id} />;
                     })}
@@ -34,6 +35,7 @@ const ListCart = ({ items }) => {
                     </tr>
                 </tfoot>
             </table>
+            
             <div className='buttons-cart'>
                 <button className='button-eliminar-todo' onClick={clearItems}>Eliminar todos los items</button>
                 <ButtonRedirect text="Finalizar compra" toLink="/checkout" />

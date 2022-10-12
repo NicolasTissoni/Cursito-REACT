@@ -7,25 +7,33 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #0f1a20;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
     >li {
         margin: 0 10px;
         padding: 10px;
         
         >a {
-            color: white;
+            color: #ada296;
             text-decoration: none;
             font-size: 1.2rem;
             padding: 10px;
+            border-radius: 5px;
             &:hover {
-            color: black;
-            background-color: white;
+                background-color: #f42c04;
+                color: white;
+                border: none;
+            }
         }
-        }
+
         >i {
             color: white;
         }
     }
+
     .cart-reditect {
         display: flex;
         align-items: center;
@@ -33,16 +41,22 @@
         width: 5%;
         margin: 10px;
         text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+
         >i, p {
             color: white;
         }
+
         >p {
             margin-left: 10px;
         }
+
         &:hover {
-            background-color: white;
-            >i, p {
-                color: black;
+            background-color: #f42c04;
+            border: none;
+            i, p {
+                color: white;
             }
         }
     }
