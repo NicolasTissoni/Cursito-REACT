@@ -1,32 +1,19 @@
-import React,  { useContext }from 'react';
+import React from 'react';
 
-import CartContext from '../../../context/CartContext';
+import ButtonDeleted from '../../../components/buttonsGlobals/buttonDeleted/ButtonDeleted';
 
-import './elementCart.scss'
+import './elementCart.scss';
+
 const ListCart = ({ item }) => {
-    const { removeItem } = useContext(CartContext);
 
-    const handleRemove = () => {
-        removeItem(item.element.id);
-    };
     return (
-        <tr className='items-container'>
-            <td className='item-name'>{item.element.name}</td>
-            <td className='item-cantidad'>{item.count}</td>
-            <td className='item-price'>${item.element.price * item.count}</td>
-            <button class="noselect">
-                <span class="text">Delete</span>
-                <span class="icon" onClick={handleRemove}>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                >
-                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
-                </svg>
-                </span>
-            </button>
+        <tr className="items-container">
+            <td className="item-name">{item.element.name}</td>
+            <td className="item-cantidad">{item.count}</td>
+            <td className="item-price">${item.element.price * item.count}</td>
+            <td>
+                <ButtonDeleted id={item.element.id}/>
+            </td>
         </tr>
     );
 };
