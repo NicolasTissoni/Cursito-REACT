@@ -9,7 +9,7 @@
     align-content: center;
     box-sizing: border-box;
     width: 40%;
-    background-color: #0f1a20;
+    background-color: #473bf0;
     border-radius: 10px;
     
     .image {
@@ -36,10 +36,12 @@
         }
 
         >h2 {
-            color: #e2856e;
+            color: white;
             padding: 10px;
             border-radius: 10px;
-            width: 100%;
+            width: 50%;
+            background-color: black;
+            
         }
 
         >p {
@@ -68,10 +70,11 @@
     .contain-button {
         margin: 15px 0;
     }
+
     .button {
-        background-color: #e2856e;
+        background-color: #473bf0;
         &:hover {
-            background-color: #f42c04;
+            background-color: #6665dd;
             color: white;
             border: none;
         }

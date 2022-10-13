@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonRedirect from '../../components/buttonRedirect/ButtonRedirect';
+import ButtonRedirect from '../../components/buttonsGlobals/buttonRedirect/ButtonRedirect';
 import './checkout.scss';
 
 const Checkout = () => {

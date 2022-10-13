@@ -5,7 +5,7 @@ import { getElementsById } from '../../data/elements/getElements';
 import Element from './element/Element';
 
 import Count from '../../components/count/Count';
-import ButtonRedirect from '../../components/buttonRedirect/ButtonRedirect';
+import ButtonRedirect from '../../components/buttonsGlobals/buttonRedirect/ButtonRedirect';
 
 import NotificationContext from '../../context/NotificationContext';
 import CartContext from '../../context/CartContext';

@@ -7,7 +7,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #0f1a20;
+    background-color: #473bf0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,13 +17,13 @@
         padding: 10px;
         
         >a {
-            color: #ada296;
+            color: white;
             text-decoration: none;
             font-size: 1.2rem;
             padding: 10px;
             border-radius: 5px;
             &:hover {
-                background-color: #f42c04;
+                background-color: #6665dd;
                 color: white;
                 border: none;
             }
@@ -53,7 +53,7 @@
         }
 
         &:hover {
-            background-color: #f42c04;
+            background-color: #6665dd;
             border: none;
             i, p {
                 color: white;

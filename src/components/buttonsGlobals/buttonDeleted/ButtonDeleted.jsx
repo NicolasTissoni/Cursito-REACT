@@ -11,6 +11,7 @@ const ButtonDeleted = (id) => {
     };
 
     return (
+        <div className='container-boton-delete'>
         <button class="noselect">
             <span class="text">Delete</span>
             <span class="icon" onClick={handleRemove}>
@@ -19,6 +20,7 @@ const ButtonDeleted = (id) => {
                 </svg>
             </span>
         </button>
+        </div>
     );
 };
 

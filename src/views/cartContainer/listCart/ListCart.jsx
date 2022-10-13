@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../../../context/CartContext';
 
 import ElementCart from '../elementCart/ElementCart';
-import ButtonRedirect from '../../../components/buttonRedirect/ButtonRedirect';
+import ButtonRedirect from '../../../components/buttonsGlobals/buttonRedirect/ButtonRedirect';
 import './listCart.scss'
 
 const ListCart = ({ items }) => {

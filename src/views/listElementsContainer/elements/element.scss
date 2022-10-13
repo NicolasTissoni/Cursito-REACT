@@ -1,11 +1,10 @@
 .element {
     border-radius: 5px;
-    border: 2px solid #0f1a20;
     box-sizing: border-box;
     width: calc((100% / 3) - 20px);
     padding: 20px;
     margin: 10px 0;
-    background-color: #0f1a20;
+    background-color: #473bf0;
 
     .image {
         margin: 10px;
@@ -17,18 +16,18 @@
 
     .name {
         margin: 0 auto;
-        color: #e2856e;
+        color: white;
     }
 
     .price {
         margin: 10px auto;
-        color: #e2856e;
+        color: white;
     }
 
     a.button {
-        background-color: #e2856e;
+        background-color: #6665dd;
         &:hover {
-            background-color: #f42c04;
+            background-color: black;
             color: white;
             border: none;
         }
