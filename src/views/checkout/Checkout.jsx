@@ -46,6 +46,9 @@ const Checkout = () => {
                     </div>
                     <div className="button-cont">
                         <ButtonRedirect text={'Comprar'} />
+
+                    <p>Si lees esto sos puto</p>
+
                     </div>
                 </div>
             </form>
