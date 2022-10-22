@@ -8,6 +8,7 @@ import Context from '../../../context/CartContext';
 
 const ListNavBar = ({ categories }) => {
     const { getCount } = useContext(Context);
+
     return (
         <ul className="list-navbar">
             {categories.map((categories) => {

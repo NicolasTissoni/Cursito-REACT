@@ -1,40 +1,45 @@
-import React from "react";
+import React from 'react';
 import './app.scss';
 
-import NavBarContainer from "../views/navBar/navBarContainer";
-import ElementsContainer from "../views/listElementsContainer/ElementsContainer";
-import CartContainer from "../views/cartContainer/CartContainer";
-import ElementByIdContainer from "../views/elementByIdContainer/ElementByIdContainer";
-import Checkout from "../views/checkout/Checkout";
-import Footer from "../views/footer/Footer";
-import Notification from "../components/notification/Notification";
+import NavBarContainer from '../views/navBar/navBarContainer';
+import ElementsContainer from '../views/listElementsContainer/ElementsContainer';
+import CartContainer from '../views/cartContainer/CartContainer';
+import ElementByIdContainer from '../views/elementByIdContainer/ElementByIdContainer';
+import Checkout from '../views/checkout/Checkout';
+import DashBoard from '../views/dashboard/DashBoard';
+import Footer from '../views/footer/Footer';
 
-import { CartContext } from "../context/CartContext";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { NotificationContext } from "../context/NotificationContext";
+import Notification from '../components/notification/Notification';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
+import { NotificationContext } from '../context/NotificationContext';
+import { UserContext } from '../context/UserContext';
 
 function App() {
-  return (
-    <div className="routes">
-      <NotificationContext>
-        <CartContext>
-          <BrowserRouter>
-            <NavBarContainer />
-            <Notification />
-            <Routes>
-              <Route path="/" element={<ElementsContainer />} />
-              <Route path="/element/:id" element={<ElementByIdContainer />} />
-              <Route path="/:category" element={<ElementsContainer />} />
-              <Route path="/cart" element={<CartContainer />} />
-              <Route path="/checkout" element={<Checkout />} />
-            </Routes>
-            <Footer />
-          </BrowserRouter>
-        </CartContext>
-      </NotificationContext>
-    </div>
-  );
-};
+    return (
+        <div className="routes">
+            <UserContext>
+                <NotificationContext>
+                    <CartContext>
+                        <BrowserRouter>
+                            <NavBarContainer />
+                            <Notification />
+                            <Routes>
+                                <Route path="/" element={<ElementsContainer />} />
+                                <Route path="/element/:id" element={<ElementByIdContainer />} />
+                                <Route path="/:category" element={<ElementsContainer />} />
+                                <Route path="/cart" element={<CartContainer />} />
+                                <Route path="/checkout" element={<Checkout />} />
+                                <Route path="/dashboard" element={<DashBoard />} />
+                            </Routes>
+                            <Footer />
+                        </BrowserRouter>
+                    </CartContext>
+                </NotificationContext>
+            </UserContext>
+        </div>
+    );
+}
 
 export default App;

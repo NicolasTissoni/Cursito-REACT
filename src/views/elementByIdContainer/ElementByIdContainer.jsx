@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { getElementsById } from '../../data/elements/getElements';
+import { getProductById } from '../../service/productService';
 
 import Element from './element/Element';
 
@@ -35,7 +35,7 @@ const ElementByIdContainer = () => {
     };
 
     useEffect(() => {
-        getElementsById(id)
+        getProductById('Products', id)
             .then((elemento) => {
                 setElement(elemento);
                 setLoading(true);

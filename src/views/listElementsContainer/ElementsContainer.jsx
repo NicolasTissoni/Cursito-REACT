@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from 'react-router-dom';
 
-import { getElementsAll } from "../../data/elements/getElements";
+import { getFirebase } from "../../service/productService";
 
 import ListElements from './listElements/ListElements';
 
@@ -14,7 +14,7 @@ const ListElementsContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getElementsAll(category)
+    getFirebase('Products', category)
       .then((response) => {
         setElements(response);
         setLoading(true);
