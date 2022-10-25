@@ -6,7 +6,7 @@ import ElementsContainer from '../views/listElementsContainer/ElementsContainer'
 import CartContainer from '../views/cartContainer/CartContainer';
 import ElementByIdContainer from '../views/elementByIdContainer/ElementByIdContainer';
 import Checkout from '../views/checkout/Checkout';
-import DashBoard from '../views/dashboard/DashBoard';
+import DashBoardContainer from '../views/dashboard/DashBoardContainer';
 import Footer from '../views/footer/Footer';
 
 import Notification from '../components/notification/Notification';
@@ -31,7 +31,7 @@ function App() {
                                 <Route path="/:category" element={<ElementsContainer />} />
                                 <Route path="/cart" element={<CartContainer />} />
                                 <Route path="/checkout" element={<Checkout />} />
-                                <Route path="/dashboard" element={<DashBoard />} />
+                                <Route path="/dashboard" element={<DashBoardContainer />} />
                             </Routes>
                             <Footer />
                         </BrowserRouter>
