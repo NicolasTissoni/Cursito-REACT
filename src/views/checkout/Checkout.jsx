@@ -78,7 +78,7 @@ const Checkout = () => {
                 codigoPostal: valores.postalCode,
             },
             items: values.itemCart,
-            total: `$${getTotal()}`,
+            total: getTotal(),
         };
 
         let productStock = getProductStock(purchase);
