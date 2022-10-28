@@ -1,5 +1,10 @@
+@import '../../../styles/index.scss';
+
 .cartContainer-sin-elementos {
-    margin: 80px auto;
+
+    @include media (desktop) {
+        margin: 80px auto;
+    }
 }
 
 .lista-de-productos-container {
@@ -10,15 +15,18 @@
 }
 
 .table {
-    margin: 0 auto;
-    border: 3px solid white;
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    margin: 20px auto;
-    background-color: #473bf0;
-    border-radius: 20px;
 
+    @include media (desktop) {
+        margin: 0 auto;
+        border: 3px solid white;
+        padding: 10px;
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+        background-color: #473bf0;
+        border-radius: 20px;
+    }
+    
     .head-table {
         th {
             color: white;
@@ -29,19 +37,29 @@
 
     .body-table {
         color: white;
-        background-color: #473bf0;
         
         td:first-child {
           border-right: 1px solid white;
           border-left: 2px solid white;  
+          background-color: #473bf0;
+          padding: 10px;
         }
         
         td:nth-child(2) {
             background-color: #473bf0;
+            text-align: center;
         }
 
         td:nth-child(3) {
             background-color: #6665dd;
+            text-align: center;
+        }
+
+        td:nth-child(4) {
+            display: none;
+            @include media (desktop) {
+                display: unset; 
+            }
         }
     }
 
@@ -80,6 +98,7 @@
         background-color: #473bf0;
         padding: 20px;
         font-size: 15px;
+        
         &:hover {
             background-color: green;
             color: white;

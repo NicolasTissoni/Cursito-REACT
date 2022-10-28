@@ -1,24 +1,60 @@
+@import '../../styles/index.scss';
+
 .count {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20px auto;
 
+    @include media (tablet) {
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 20px 0;
+    }
+
+    @include media (desktop) {
+        align-items: center;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    
     .buttonsCount-Container{
         display: flex;
-        align-items: center;
         background-color:#473bf0;
+        align-items: center;
         border-radius: 25px;
-        width: 5%;
-        justify-content: center;
+        width: 25%;
+        justify-content: space-evenly;
+        @include media (tablet) {
+            align-items: center;
+            border-radius: 25px;
+            width: 13%;
+            justify-content: center;
+        }
+
+        @include media (desktop) {
+            align-items: center;
+            border-radius: 25px;
+            width: 5%;
+            justify-content: center;
+        }
+        
         button {
-            text-align: center;
             color: white;
+            text-align: center;
             border: none;
-            cursor: pointer;
             background-color:#473bf0;
-            width: 20px;
-            height: 40px;
+            
+            @include media (tablet) {
+                width: 20px;
+                height: 40px;
+            }
+
+            @include media (desktop) {
+                cursor: pointer;
+                width: 20px;
+                height: 40px;
+            }
         }
 
         h2 {
@@ -27,19 +63,28 @@
     }
         
     .buttonAdd {
-        width: 150px;
-        padding: 20px;
-        margin-top: 10px;
         color: white;
         border: none;
         background-color:#473bf0;
-        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
         border-radius: 7px;
+        @include media (tablet) {
+            width: 150px;
+            padding: 20px;
+            margin-top: 10px;
+        }
 
-        &:hover {
-            background-color: #6665dd;
-            color: white;
-            border: none;
+        @include media (desktop) {
+            width: 150px;
+            padding: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover {
+                background-color: #6665dd;
+                color: white;
+                border: none;
+            }
         }
     }
 }

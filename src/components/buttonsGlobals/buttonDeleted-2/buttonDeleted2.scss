@@ -1,0 +1,10 @@
+@import '../../../styles/index.scss';
+
+.btn-deleted-2 {
+    color: red;
+    margin: 5px;
+    font-size: 30px;
+    @include media (desktop) {
+        display: none;
+    }
+}

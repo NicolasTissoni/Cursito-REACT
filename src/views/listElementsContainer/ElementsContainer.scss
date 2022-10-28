@@ -1,11 +1,17 @@
+@import '../../styles/index.scss';
+
 .container-home {
     
     .title {
-        text-align: center;
-        color: black;
-        width: 275px;
-        margin: 0 auto;
-        border-radius: 10px;
+
+        @include media (desktop) {
+            text-align: center;
+            color: black;
+            width: 275px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        
     }
 }
 

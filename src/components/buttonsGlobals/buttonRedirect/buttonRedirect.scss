@@ -1,5 +1,10 @@
+@import '../../../styles/index.scss';
+
 .contain-button {
     margin-top: 20px;
+    @include media (tablet) {
+        margin-top: 50px;
+    }
     .button {
         background-color: black;
         text-decoration: none;

@@ -28,12 +28,12 @@ const DashBoardContainer = () => {
     }, [values.email]);
 
     return (
-        <div className="tittle">
+        <div className='dashCont'>
             {values.email !== '' ? (
                 <div>
                     {list ? (
-                        <div className="title">
-                            <h2>Tu lista de compras</h2>
+                        <div className='listaDashCont'>
+                            <h2 className="tittle">Tu lista de compras</h2>
                             <ListDashBoard products={products} />
                         </div>
                     ) : (
@@ -45,7 +45,7 @@ const DashBoardContainer = () => {
                     <ButtonRedirect text="Volver al inicio" toLink="/" />
                 </div>
             ) : (
-                <div>
+                <div className='button'>
                     <h2>No compraste nada aún</h2>
                     <ButtonRedirect text="Volver al inicio" toLink="/" />
                 </div>

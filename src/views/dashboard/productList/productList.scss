@@ -1,0 +1,25 @@
+.ItemsD {
+    border: 2px solid white;
+    padding: 5px;
+    background-color: #6665dd;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+    p {
+        font-weight: bold;
+    }
+    .idClient {
+        color: white;
+        text-align: center;   
+    }
+
+    .emailD {
+        text-align: left;
+        color: white;
+        padding: 0;
+    }
+
+    .ulItemsD {
+        list-style: none;
+    }
+}

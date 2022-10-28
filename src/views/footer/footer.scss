@@ -1,3 +1,5 @@
+@import '../../styles/index.scss';
+
 .footer {
     background-color: #473bf0;
 
@@ -5,5 +7,12 @@
         text-align: center;
         padding: 30px;
         color: white;
+        margin-top: 60px;
+        @include media (desktop) {
+            margin-top: unset;
+        }
+        @include media (tablet) {
+            margin-top: 50px;
+        }
     }
 }

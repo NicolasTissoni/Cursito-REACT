@@ -1,47 +1,95 @@
-@import '../../../styles/general.scss';
+@import '../../../styles/index.scss';
 
 
 .elementSelect {
     display: flex;
-    margin: 20px auto;
+    margin: 50px auto;
     flex-direction: column;
     align-items: center;
     align-content: center;
     box-sizing: border-box;
-    width: 40%;
+    width: 80%;
     background-color: #473bf0;
     border-radius: 10px;
-    
-    .image {
-        padding: 10px;
+    padding: 20px;
+    @include media (tablet) {
+        margin: 50px auto;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+        width: 60%;
+        background-color: #473bf0;
         border-radius: 10px;
-        margin: 30px 0 0 0;
-        
-        img {
-            height: 500px;
-            border-radius: 10px;
-        }
+        padding: 20px;
+        height: 530px;
     }
 
+    @include media (desktop) {
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+        width: 30%;
+        background-color: #473bf0;
+        border-radius: 10px;
+        height: 570px;
+    }
+    
+    
+    .image {
+        img {
+            height: 200px;
+            border-radius: 10px;
+            @include media (tablet) {
+                height: 300px;
+            }
+            @include media (tablet) {
+                height: 300px;
+            }
+        }
+
+        @include media (desktop) {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 30px 0 0 0;
+        }
+    }
 
     .contenedor-data {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        h2, p, h3 {
-            margin: 10px 0;
-            color: white;
+        color: white;
+        @include media (tablet) {
+            margin-top: 20px;
         }
-
-        >h2 {
+        .name {
             color: white;
             padding: 10px;
             border-radius: 10px;
-            width: 50%;
+            width: 70%;
             background-color: black;
-            
+            margin: 3.5px;
+        }
+        .description {
+            margin: 3.5px;
+            padding: 0;
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .price {
+            padding: 0;
+            margin: 3.5px;
+        }
+
+        @include media (tablet) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         >p {
@@ -50,22 +98,32 @@
             padding: 15px;
             border-radius: 10px;
         }
-
+        
         >h3 {
-            font-size: 40px;
+            font-size: 30px;
             padding: 15px;
+        }
+        @include media (desktop) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
     }
 }
 
 .buttons {
     display: flex;
-    align-content: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 55px;
+
+    @include media (desktop) {
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 55px; 
+    }
+    
     
     .contain-button {
         margin: 15px 0;

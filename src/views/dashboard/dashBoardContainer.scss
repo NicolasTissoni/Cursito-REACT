@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.dashCont {
+    
+    .listaDashCont {
+
+        @include media (desktop) {
+            background-color: #473bf0;
+            width: 90%;
+            margin: 50px auto;
+            padding: 10px;
+            h2 {
+                color: white;
+            }
+        }
+    }
+}
+
+.contain-button {
+    text-align: center;
+    @include media (desktop) {
+       margin: 30px; 
+    }
+    
+    .button {
+        background-color: #473bf0;
+        &:hover {
+            background-color: #6665dd;
+            border: none;
+            color: white;
+        }
+    }
+}
