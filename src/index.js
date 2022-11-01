@@ -4,8 +4,4 @@ import './styles/index.scss';
 import App from './routes/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <App />,
-  document.getElementById('root')
-);
-
+root.render(<App />, document.getElementById('root'));

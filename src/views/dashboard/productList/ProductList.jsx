@@ -5,8 +5,8 @@ import './productList.scss'
 const ProductList = ({ product }) => {
     return (
         <div className="ItemsD">
-            <h1 className='idClient'>ID de Compra: {product.id}</h1>
-            <h2 className='emailD'>Email de compra: {product.clienteInfo.email}</h2>
+            <h2 className='idClient'>ID de Compra: {product.id}</h2>
+            <h3 className='emailD'>Email de compra: {product.clienteInfo.email}</h3>
             <p>Productos:</p>
             {product.items.length > 0 &&
                 product.items.map((item) => {

@@ -5,18 +5,24 @@
     color: white;
     width: 100%;
     margin: 10px 0;
+    padding: 10px;
     p {
         font-weight: bold;
     }
     .idClient {
         color: white;
-        text-align: center;   
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 25px;
+        overflow: hidden;
     }
 
     .emailD {
         text-align: left;
         color: white;
         padding: 0;
+        margin: 10px 0;
     }
 
     .ulItemsD {
