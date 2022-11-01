@@ -5,7 +5,7 @@ import './productList.scss'
 const ProductList = ({ product }) => {
     return (
         <div className="ItemsD">
-            <h1 className='idClient'>ID de Compra: {product.id}</h1>
+            <p className='idClient'>ID de Compra: {product.id}</p>
             <h2 className='emailD'>Email de compra: {product.clienteInfo.email}</h2>
             <p>Productos:</p>
             {product.items.length > 0 &&

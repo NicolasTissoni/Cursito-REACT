@@ -6,7 +6,7 @@
   background-color: #473bf0;
   list-style: none;
   padding: 10px;
-  
+
   .btn-cart {
     display: flex;
     justify-content: space-between;
@@ -18,10 +18,7 @@
     @include media(desktop) {
       order: 1;
     }
-    @include media(tablet) {
-      order: 1;
-    }
-
+    
     .btn {
       width: 150px;
       height: 50px;
@@ -37,9 +34,6 @@
       color: #f5f5f5;
       
       @include media(desktop) {
-        display: none;
-      }
-      @include media (tablet) {
         display: none;
       }
 
@@ -82,7 +76,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    flex-direction: row;
+    flex-direction: column;
     &:first-child {
       order: 2;
     }
@@ -149,14 +143,6 @@
       display: none;
     }
 
-    @include media(tablet) {
-      display: block;
-      padding: 10px 0;
-      background-color: none;
-      &.desactive {
-        display: unset;
-      }
-    }
 
     @include media(desktop) {
       display: block;

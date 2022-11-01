@@ -13,6 +13,31 @@
         }
         
     }
+    .btn-scroll {
+        position: fixed;
+        background-color: #473bf0;
+        padding: 30px;
+        border-radius: 50%;
+        right: 0;
+        border: 2px solid white;
+        bottom: 10px;
+        color: white;
+        @include media (tablet) {
+            right: 10px;
+        }
+        @include media (tablet) {
+            &:hover {
+                background-color: #6665dd;
+                cursor: pointer;
+            }
+            button {
+                &:hover {
+                    background-color: #6665dd;
+                }
+            }
+        }
+        i {
+            font-size: medium;
+        }
+    }
 }
-
-

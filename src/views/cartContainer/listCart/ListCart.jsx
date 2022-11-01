@@ -19,6 +19,7 @@ const ListCart = ({ items }) => {
                         <th>Producto</th>
                         <th>Cantidad</th>
                         <th>Precio</th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -32,6 +33,7 @@ const ListCart = ({ items }) => {
                     <tr>
                         <td colSpan="2">Total:</td>
                         <td>${getTotal()}</td>
+                        <td></td>
                     </tr>
                 </tfoot>
             </table>

@@ -23,20 +23,21 @@
         background-color:#473bf0;
         align-items: center;
         border-radius: 25px;
-        width: 25%;
         justify-content: space-evenly;
+        width: 150px;
+        padding: 5px;
         @include media (tablet) {
             align-items: center;
             border-radius: 25px;
-            width: 13%;
-            justify-content: center;
+            width: 130px;
+            justify-content: space-evenly;
         }
 
         @include media (desktop) {
             align-items: center;
             border-radius: 25px;
-            width: 5%;
-            justify-content: center;
+            width: 140px;
+            justify-content: space-evenly;
         }
         
         button {
@@ -66,9 +67,10 @@
         color: white;
         border: none;
         background-color:#473bf0;
-        padding: 10px;
+        padding: 20px;
         margin-top: 10px;
         border-radius: 7px;
+        width: 150px;
         @include media (tablet) {
             width: 150px;
             padding: 20px;
