@@ -6,6 +6,7 @@ import Loader from '../../components/loader/Loader';
 import UserContext from '../../context/UserContext';
 import { getFirebase } from '../../service/productService';
 import ButtonRedirect from '../../components/buttonsGlobals/buttonRedirect/ButtonRedirect';
+import ButtonScroll from '../../components/buttonScroll/ButtonScroll';
 
 const DashBoardContainer = () => {
     const { values } = useContext(UserContext);
@@ -50,6 +51,7 @@ const DashBoardContainer = () => {
                     <ButtonRedirect text="Volver al inicio" toLink="/" />
                 </div>
             )}
+            <ButtonScroll />
         </div>
     );
 };

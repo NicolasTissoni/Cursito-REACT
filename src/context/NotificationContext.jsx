@@ -12,7 +12,7 @@ export const NotificationContext = ({ children }) => {
     setTimeout(() => {
       setMessage('');
       setSeverity('');
-    }, 99999);
+    }, 3000);
   };
 
   return (
