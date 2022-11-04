@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.btn-scroll {
+    background-color: #473bf0;
+    border-radius: 50%;
+    border: 2px solid white;
+    bottom: 10px;
+    color: white;
+    padding: 30px;
+    position: fixed;
+    right: 10px;
+
+    i {
+        font-size: medium;
+    }
+
+    &:active {
+        background-color: #6665dd;
+    }
+
+    @include media(desktop) {
+        bottom: 20px;
+        right: 20px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #6665dd;
+        }
+        &:active{
+            background-color: rgb(122, 116, 206);
+        }
+    }
+}

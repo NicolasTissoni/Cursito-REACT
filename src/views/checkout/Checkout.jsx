@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import CartContext from '../../context/CartContext';
 import UserContext from '../../context/UserContext';
 import NotificationContext from '../../context/NotificationContext';
-
+import Loader from '../../components/loader/Loader';
 import { getProductStock, outOfStockProduct } from '../../service/productService';
 
 import './checkout.scss';
@@ -56,11 +56,11 @@ const Checkout = () => {
         controllError();
 
         if (
-            !errorName ||
-            !errorLastName ||
-            !errorEmail ||
-            !errorPhone ||
-            !errorDirection ||
+            !errorName &&
+            !errorLastName &&
+            !errorEmail &&
+            !errorPhone &&
+            !errorDirection &&
             !errorPostalCode
         ) {
             checkout();
@@ -103,100 +103,107 @@ const Checkout = () => {
             });
     };
 
+    if (processingOrder) {
+        return <h2>Redireccionando al dashboard</h2>;
+    }
+
+    if (values.itemCart.length === 0) {
+        return (
+            <>
+                <div>Volver al inicio, faltan items</div>
+                <Loader />
+            </>
+        );
+    }
+
     return (
         <div>
             <h2 className="title">Checkout</h2>
-            {!processingOrder ? (
-                <form method="post" onSubmit={validateForm}>
-                    <div className="form-container">
-                        <div className='container-label-input'>
-                            <label>Nombre</label>
-                            <input
-                                type="text"
-                                placeholder="Nombre"
-                                name="name"
-                                onChange={fillOutForm}
-                            />
-                            {errorName && <p className="error">El campo nombre es obligatorio*</p>}
+            <form method="post" onSubmit={validateForm}>
+                <div className="form-container">
+                    <div className="container-label-input">
+                        <label>Nombre</label>
+                        <input
+                            type="text"
+                            placeholder="Nombre"
+                            name="name"
+                            onChange={fillOutForm}
+                        />
+                        {errorName && <p className="error">El campo nombre es obligatorio*</p>}
+                    </div>
+                    <div className="container-label-input">
+                        <label>Apellido</label>
+                        <input
+                            type="text"
+                            placeholder="Apellido"
+                            name="lastName"
+                            onChange={fillOutForm}
+                        />
+                        {errorLastName && (
+                            <p className="error">El campo apellido es obligatorio*</p>
+                        )}
+                    </div>
+                    <div className="container-label-input">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            onChange={fillOutForm}
+                        />
+                        {errorEmail && <p className="error">El campo email es obligatorio*</p>}
+                    </div>
+                    <div className="container-label-input">
+                        <label>Numero de Telefono</label>
+                        <input
+                            type="number"
+                            placeholder="Numero"
+                            name="phone"
+                            onChange={fillOutForm}
+                        />
+                        {errorPhone && <p className="error">El campo telefono es obligatorio*</p>}
+                    </div>
+                    <div className="container-label-input">
+                        <label>Direccion</label>
+                        <input
+                            type="text"
+                            placeholder="Direccion"
+                            name="direction"
+                            onChange={fillOutForm}
+                        />
+                        {errorDirection && (
+                            <p className="error">El campo direccion es obligatorio*</p>
+                        )}
+                    </div>
+                    <div className="container-label-input">
+                        <label>Codigo Postal</label>
+                        <input
+                            type="text"
+                            placeholder="Codigo Postal"
+                            name="postalCode"
+                            onChange={fillOutForm}
+                        />
+                        {errorPostalCode && (
+                            <p className="error">El campo codigo postal es obligatorio*</p>
+                        )}
+                    </div>
+                    <div className="pago-container">
+                        <div className="pago1-container">
+                            <span>EFECTIVO</span>
+                            <i className="fa-solid fa-sack-dollar"></i>
+                            <input type="radio" name="pago" />
                         </div>
-                        <div className='container-label-input'>
-                            <label>Apellido</label>
-                            <input
-                                type="text"
-                                placeholder="Apellido"
-                                name="lastName"
-                                onChange={fillOutForm}
-                            />
-                            {errorLastName && (
-                                <p className="error">El campo apellido es obligatorio*</p>
-                            )}
-                        </div>
-                        <div className='container-label-input'>
-                            <label>Email</label>
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                onChange={fillOutForm}
-                            />
-                            {errorEmail && <p className="error">El campo email es obligatorio*</p>}
-                        </div>
-                        <div className='container-label-input'>
-                            <label>Numero de Telefono</label>
-                            <input
-                                type="number"
-                                placeholder="Numero"
-                                name="phone"
-                                onChange={fillOutForm}
-                            />
-                            {errorPhone && (
-                                <p className="error">El campo telefono es obligatorio*</p>
-                            )}
-                        </div>
-                        <div className='container-label-input'>
-                            <label>Direccion</label>
-                            <input
-                                type="text"
-                                placeholder="Direccion"
-                                name="direction"
-                                onChange={fillOutForm}
-                            />
-                            {errorDirection && (
-                                <p className="error">El campo direccion es obligatorio*</p>
-                            )}
-                        </div>
-                        <div className='container-label-input'>
-                            <label>Codigo Postal</label>
-                            <input
-                                type="text"
-                                placeholder="Codigo Postal"
-                                name="postalCode"
-                                onChange={fillOutForm}
-                            />
-                            {errorPostalCode && (
-                                <p className="error">El campo codigo postal es obligatorio*</p>
-                            )}
-                        </div>
-                        <div className="pago-container">
-                            <div className="pago1-container">
-                                <span>EFECTIVO</span>
-                                <i className="fa-solid fa-sack-dollar"></i>
-                                <input type="radio" name="pago" />
-                            </div>
-                            <div className="pago2-container">
-                                <span>TARJETA</span>
-                                <i className="fa-solid fa-credit-card"></i>
-                                <input type="radio" name="pago" />
-                            </div>
-                        </div>
-                        <div className="button-cont">
-                            <input type="submit" text="Comprar" />
+                        <div className="pago2-container">
+                            <span>TARJETA</span>
+                            <i className="fa-solid fa-credit-card"></i>
+                            <input type="radio" name="pago" />
                         </div>
                     </div>
-                </form>
-            ) : (
-                <h2>Redireccionando al dashboard</h2>
-            )}
+                    <div className="button-cont">
+                        <input type="submit" text="Comprar" />
+                    </div>
+                </div>
+            </form>
         </div>
     );
 };
