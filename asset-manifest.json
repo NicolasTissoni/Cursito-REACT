@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NicolasTissoni.github.io/Curso-React/static/css/main.db3b7cb6.css",
-    "main.js": "/NicolasTissoni.github.io/Curso-React/static/js/main.9c663344.js",
-    "index.html": "/NicolasTissoni.github.io/Curso-React/index.html",
-    "main.db3b7cb6.css.map": "/NicolasTissoni.github.io/Curso-React/static/css/main.db3b7cb6.css.map",
-    "main.9c663344.js.map": "/NicolasTissoni.github.io/Curso-React/static/js/main.9c663344.js.map"
+    "main.css": "/Curso-React/static/css/main.db3b7cb6.css",
+    "main.js": "/Curso-React/static/js/main.22677bd5.js",
+    "index.html": "/Curso-React/index.html",
+    "main.db3b7cb6.css.map": "/Curso-React/static/css/main.db3b7cb6.css.map",
+    "main.22677bd5.js.map": "/Curso-React/static/js/main.22677bd5.js.map"
   },
   "entrypoints": [
     "static/css/main.db3b7cb6.css",
-    "static/js/main.9c663344.js"
+    "static/js/main.22677bd5.js"
   ]
 }
