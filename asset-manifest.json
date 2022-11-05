@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Curso-React/Procesadores/static/css/main.db3b7cb6.css",
-    "main.js": "/Curso-React/Procesadores/static/js/main.d2869e1e.js",
-    "index.html": "/Curso-React/Procesadores/index.html",
-    "main.db3b7cb6.css.map": "/Curso-React/Procesadores/static/css/main.db3b7cb6.css.map",
-    "main.d2869e1e.js.map": "/Curso-React/Procesadores/static/js/main.d2869e1e.js.map"
+    "main.css": "/static/css/main.db3b7cb6.css",
+    "main.js": "/static/js/main.c4a61e13.js",
+    "index.html": "/index.html",
+    "main.db3b7cb6.css.map": "/static/css/main.db3b7cb6.css.map",
+    "main.c4a61e13.js.map": "/static/js/main.c4a61e13.js.map"
   },
   "entrypoints": [
     "static/css/main.db3b7cb6.css",
-    "static/js/main.d2869e1e.js"
+    "static/js/main.c4a61e13.js"
   ]
 }
