@@ -1,197 +1,201 @@
 [
   {
-      "id": 1,
-      "name": "RTX 3060 Ti",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_29446_Placa_de_Video_Zotac_GeForce_RTX_3060_Ti_8GB_GDDR6_Twin_Edge_OC_LHR_a3e9ba5e-grn.jpg",
-      "description": "Placa de Video Zotac GeForce RTX 3060 Ti 8GB GDDR6 Twin Edge OC LHR",
-      "stock": 9,
-      "price": 121000,
-      "category": "Graficas"
+    "id": "sasd2312",
+    "category": "homepage"
   },
   {
-      "id": 2,
-      "name": "RTX 3070 Ti",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34235_Placa_de_Video_Zotac_GeForce_RTX_3070_8GB_GDDR6_Twin_Edge_OC_White_Edition_LHR_4fad0419-grn.jpg",
-      "description": "Placa de Video Zotac GeForce RTX 3070 8GB GDDR6 Twin Edge OC White Edition LHR",
-      "stock": 5,
-      "price": 169000,
-      "category": "Graficas"
+    "id": 1,
+    "name": "RTX 3060 Ti",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_29446_Placa_de_Video_Zotac_GeForce_RTX_3060_Ti_8GB_GDDR6_Twin_Edge_OC_LHR_a3e9ba5e-grn.jpg",
+    "description": "Placa de Video Zotac GeForce RTX 3060 Ti 8GB GDDR6 Twin Edge OC LHR",
+    "stock": 9,
+    "price": 121000,
+    "category": "Graficas"
   },
   {
-      "id": 3,
-      "name": "RTX 3090",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27857_Placa_de_Video_MSI_GeForce_RTX_3090_24GB_GDDR6X_GAMING_X_TRIO_a35b26f2-grn.jpg",
-      "description": "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X GAMING X TRIO",
-      "stock": 2,
-      "price": 295000,
-      "category": "Graficas"
-  },
-
-  {
-      "id": 4,
-      "name": "Ryzen 5 5600x",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22254_Procesador_AMD_Ryzen_5_5600X_4.6GHz_Turbo_AM4___Wraith_Stealth_Cooler_f737ec9f-grn.jpg",
-      "description": "Procesador AMD Ryzen 5 5600X 4.6GHz Turbo AM4 + Wraith Stealth Cooler",
-      "stock": 10,
-      "price": 44500,
-      "category": "Procesadores"
+    "id": 2,
+    "name": "RTX 3070 Ti",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34235_Placa_de_Video_Zotac_GeForce_RTX_3070_8GB_GDDR6_Twin_Edge_OC_White_Edition_LHR_4fad0419-grn.jpg",
+    "description": "Placa de Video Zotac GeForce RTX 3070 8GB GDDR6 Twin Edge OC White Edition LHR",
+    "stock": 5,
+    "price": 169000,
+    "category": "Graficas"
   },
   {
-      "id": 5,
-      "name": "Ryzen 3 3200G",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31546_Procesador_AMD_Ryzen_3_3200G_4.0GHz_Turbo___Radeon_Vega_8_AM4_OEM_sin_Cooler_88ae3458-grn.jpg",
-      "description": "Procesador AMD Ryzen 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 OEM sin Cooler",
-      "stock": 10,
-      "price": 22500,
-      "category": "Procesadores"
-  },
-  {
-      "id": 6,
-      "name": "Ryzen 9 5950x",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22302_Procesador_AMD_Ryzen_9_5950X_4.9GHz_Turbo_AM4_-_No_incluye_Cooler_9d34d3b3-grn.jpg",
-      "description": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
-      "stock": 2,
-      "price": 127500,
-      "category": "Procesadores"
+    "id": 3,
+    "name": "RTX 3090",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27857_Placa_de_Video_MSI_GeForce_RTX_3090_24GB_GDDR6X_GAMING_X_TRIO_a35b26f2-grn.jpg",
+    "description": "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X GAMING X TRIO",
+    "stock": 2,
+    "price": 295000,
+    "category": "Graficas"
   },
 
   {
-      "id": 7,
-      "name": "Ram Adata 8GB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31738_Memoria_Adata_DDR4_8GB_3200MHz_XPG_Spectrix_D41_RGB_1dd172bf-grn.jpg",
-      "description": "Memoria Adata DDR4 8GB 3200MHz XPG Spectrix D41 RGB",
-      "stock": 20,
-      "price": 8000,
-      "category": "Ram"
+    "id": 4,
+    "name": "Ryzen 5 5600x",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22254_Procesador_AMD_Ryzen_5_5600X_4.6GHz_Turbo_AM4___Wraith_Stealth_Cooler_f737ec9f-grn.jpg",
+    "description": "Procesador AMD Ryzen 5 5600X 4.6GHz Turbo AM4 + Wraith Stealth Cooler",
+    "stock": 10,
+    "price": 44500,
+    "category": "Procesadores"
   },
   {
-      "id": 8,
-      "name": "Ram Adata 8GB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33966_Memoria_Adata_DDR4_8GB_3600MHz_XPG_Spectrix_D60G_RGB__88f51e0f-grn.jpg",
-      "description": "Memoria Adata DDR4 8GB 3600MHz XPG Spectrix D60G RGB",
-      "stock": 50,
-      "price": 10100,
-      "category": "Ram"
+    "id": 5,
+    "name": "Ryzen 3 3200G",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31546_Procesador_AMD_Ryzen_3_3200G_4.0GHz_Turbo___Radeon_Vega_8_AM4_OEM_sin_Cooler_88ae3458-grn.jpg",
+    "description": "Procesador AMD Ryzen 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 OEM sin Cooler",
+    "stock": 10,
+    "price": 22500,
+    "category": "Procesadores"
   },
   {
-      "id": 9,
-      "name": "Ram Team 8GB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_28414_Memoria_Team_DDR4_8GB_3200MHz_T-Force_Delta_RGB_Black_CL16-20-20-40_441c03ab-grn.jpg",
-      "description": "Memoria Team DDR4 8GB 3200MHz T-Force Delta RGB Black CL16-20-20-40",
-      "stock": 35,
-      "price": 8750,
-      "category": "Ram"
-  },
-
-  {
-      "id": 10,
-      "name": "Disco Rigido WD 1TB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_9018_Disco_R__gido_WD_1TB_BLUE_64MB_SATA_6.0GB_s__ca74d162-grn.jpg",
-      "description": "Disco Rígido WD 1TB BLUE 64MB SATA 6.0GB/s",
-      "stock": 100,
-      "price": 8199,
-      "category": "Discos"
-  },
-  {
-      "id": 11,
-      "name": "Disco Rigido WD 2TB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_21014_Disco_Rigido_WD_2TB_BLUE_256MB_SATA_6.0GB_s_44f766ac-grn.jpg",
-      "description": "Disco Rigido WD 2TB BLUE 256MB SATA 6.0GB/s",
-      "stock": 100,
-      "price": 10499,
-      "category": "Discos"
-  },
-  {
-      "id": 12,
-      "name": "Disco Solido SSD Team 2TB",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_26936_Disco_Solido_SSD_M.2_Team_2TB_T-Force_Cardea_A440_7000MB_s_NVMe_PCI-E_Gen4_96517b40-grn.jpg",
-      "description": "Disco Solido SSD M.2 Team 2TB T-Force Cardea A440 7000MB/s NVMe PCI-E Gen4",
-      "stock": 20,
-      "price": 106315,
-      "category": "Discos"
+    "id": 6,
+    "name": "Ryzen 9 5950x",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_22302_Procesador_AMD_Ryzen_9_5950X_4.9GHz_Turbo_AM4_-_No_incluye_Cooler_9d34d3b3-grn.jpg",
+    "description": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
+    "stock": 2,
+    "price": 127500,
+    "category": "Procesadores"
   },
 
   {
-      "id": 13,
-      "name": "Fuente Asus ROG 1200w",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23300_Fuente_ASUS_ROG_THOR_1200P_80_Plus_Platinum_1200W_Full_modular_b0973904-grn.jpg",
-      "description": "Fuente ASUS ROG THOR 1200P 80 Plus Platinum 1200W Full modular",
-      "stock": 10,
-      "price": 59760,
-      "category": "Fuentes"
+    "id": 7,
+    "name": "Ram Adata 8GB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31738_Memoria_Adata_DDR4_8GB_3200MHz_XPG_Spectrix_D41_RGB_1dd172bf-grn.jpg",
+    "description": "Memoria Adata DDR4 8GB 3200MHz XPG Spectrix D41 RGB",
+    "stock": 20,
+    "price": 8000,
+    "category": "Ram"
   },
   {
-      "id": 14,
-      "name": "Fuente Cooler Master 1250w",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31206_Fuente_Cooler_Master_1250w_MWE_V2_Full_Modular_80_Plus_Gold_a184293a-grn.jpg",
-      "description": "Fuente Cooler Master 1250w MWE V2 Full Modular 80 Plus Gold",
-      "stock": 10,
-      "price": 51360,
-      "category": "Fuentes"
+    "id": 8,
+    "name": "Ram Adata 8GB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33966_Memoria_Adata_DDR4_8GB_3600MHz_XPG_Spectrix_D60G_RGB__88f51e0f-grn.jpg",
+    "description": "Memoria Adata DDR4 8GB 3600MHz XPG Spectrix D60G RGB",
+    "stock": 50,
+    "price": 10100,
+    "category": "Ram"
   },
   {
-      "id": 15,
-      "name": "Fuente Cooler Master 750w",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33933_Fuente_Cooler_Master_MWE_V2_750W_80_Plus_Gold_e9a9254c-grn.jpg",
-      "description": "Fuente Cooler Master MWE V2 750W 80 Plus Gold",
-      "stock": 50,
-      "price": 24700,
-      "category": "Fuentes"
-  },
-
-  {
-      "id": 16,
-      "name": "Gabinete Cooler Master",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_15982_Gabinete_Cooler_Master_COSMOS_C700M_ARGB_E-ATX_14e3e773-grn.jpg",
-      "description": "Gabinete Cooler Master COSMOS C700M ARGB E-ATX",
-      "stock": 5,
-      "price": 110590,
-      "category": "Gabinetes"
-  },
-  {
-      "id": 17,
-      "name": "Gabinete Asus ROG Stix",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34179_Gabinete_ASUS_ROG_STRIX_GX601_Helios_Aluminum_White_RGB_9597dabf-grn.jpg",
-      "description": "Gabinete ASUS ROG STRIX GX601 Helios Aluminum White RGB",
-      "stock": 5,
-      "price": 74800,
-      "category": "Gabinetes"
-  },
-  {
-      "id": 18,
-      "name": "Gabinete Cougar",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_21547_Gabinete_Cougar_Conquer_2_4aca886c-grn.jpg",
-      "description": "Gabinete Cougar Conquer 2",
-      "stock": 5,
-      "price": 70700,
-      "category": "Gabinetes"
+    "id": 9,
+    "name": "Ram Team 8GB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_28414_Memoria_Team_DDR4_8GB_3200MHz_T-Force_Delta_RGB_Black_CL16-20-20-40_441c03ab-grn.jpg",
+    "description": "Memoria Team DDR4 8GB 3200MHz T-Force Delta RGB Black CL16-20-20-40",
+    "stock": 35,
+    "price": 8750,
+    "category": "Ram"
   },
 
   {
-      "id": 19,
-      "name": "Mother Asus ROG X570",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_24347_Mother_ASUS_ROG_X570_CROSSHAIR_VIII_AM4_DARK_HERO_05075ed7-grn.jpg",
-      "description": "Mother ASUS ROG X570 CROSSHAIR VIII AM4 DARK HERO",
-      "stock": 3,
-      "price": 109350,
-      "category": "Mothers"
+    "id": 10,
+    "name": "Disco Rigido WD 1TB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_9018_Disco_R__gido_WD_1TB_BLUE_64MB_SATA_6.0GB_s__ca74d162-grn.jpg",
+    "description": "Disco Rígido WD 1TB BLUE 64MB SATA 6.0GB/s",
+    "stock": 100,
+    "price": 8199,
+    "category": "Discos"
   },
   {
-      "id": 20,
-      "name": "Mother Asus ROG Crosshair",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31324_Mother_ASUS_ROG_CROSSHAIR_VIII_HERO__WI-FI__fc68faa8-grn.jpg",
-      "description": "Mother ASUS ROG CROSSHAIR VIII HERO (WI-FI)",
-      "stock": 3,
-      "price": 92800,
-      "category": "Mothers"
+    "id": 11,
+    "name": "Disco Rigido WD 2TB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_21014_Disco_Rigido_WD_2TB_BLUE_256MB_SATA_6.0GB_s_44f766ac-grn.jpg",
+    "description": "Disco Rigido WD 2TB BLUE 256MB SATA 6.0GB/s",
+    "stock": 100,
+    "price": 10499,
+    "category": "Discos"
   },
   {
-      "id": 21,
-      "name": "Mother Asusrock B450",
-      "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_12887_Mother_Asrock_B450_Steel_Legend_AM4_RGB_Dual_M.2_Dual_USB_3.1_bef7a4f7-grn.jpg",
-      "description": "Mother Asrock B450 Steel Legend AM4 RGB Dual M.2 Dual USB 3.1",
-      "stock": 10,
-      "price": 26000,
-      "category": "Mothers"
+    "id": 12,
+    "name": "Disco Solido SSD Team 2TB",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_26936_Disco_Solido_SSD_M.2_Team_2TB_T-Force_Cardea_A440_7000MB_s_NVMe_PCI-E_Gen4_96517b40-grn.jpg",
+    "description": "Disco Solido SSD M.2 Team 2TB T-Force Cardea A440 7000MB/s NVMe PCI-E Gen4",
+    "stock": 20,
+    "price": 106315,
+    "category": "Discos"
+  },
+
+  {
+    "id": 13,
+    "name": "Fuente Asus ROG 1200w",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23300_Fuente_ASUS_ROG_THOR_1200P_80_Plus_Platinum_1200W_Full_modular_b0973904-grn.jpg",
+    "description": "Fuente ASUS ROG THOR 1200P 80 Plus Platinum 1200W Full modular",
+    "stock": 10,
+    "price": 59760,
+    "category": "Fuentes"
+  },
+  {
+    "id": 14,
+    "name": "Fuente Cooler Master 1250w",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31206_Fuente_Cooler_Master_1250w_MWE_V2_Full_Modular_80_Plus_Gold_a184293a-grn.jpg",
+    "description": "Fuente Cooler Master 1250w MWE V2 Full Modular 80 Plus Gold",
+    "stock": 10,
+    "price": 51360,
+    "category": "Fuentes"
+  },
+  {
+    "id": 15,
+    "name": "Fuente Cooler Master 750w",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33933_Fuente_Cooler_Master_MWE_V2_750W_80_Plus_Gold_e9a9254c-grn.jpg",
+    "description": "Fuente Cooler Master MWE V2 750W 80 Plus Gold",
+    "stock": 50,
+    "price": 24700,
+    "category": "Fuentes"
+  },
+
+  {
+    "id": 16,
+    "name": "Gabinete Cooler Master",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_15982_Gabinete_Cooler_Master_COSMOS_C700M_ARGB_E-ATX_14e3e773-grn.jpg",
+    "description": "Gabinete Cooler Master COSMOS C700M ARGB E-ATX",
+    "stock": 5,
+    "price": 110590,
+    "category": "Gabinetes"
+  },
+  {
+    "id": 17,
+    "name": "Gabinete Asus ROG Stix",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_34179_Gabinete_ASUS_ROG_STRIX_GX601_Helios_Aluminum_White_RGB_9597dabf-grn.jpg",
+    "description": "Gabinete ASUS ROG STRIX GX601 Helios Aluminum White RGB",
+    "stock": 5,
+    "price": 74800,
+    "category": "Gabinetes"
+  },
+  {
+    "id": 18,
+    "name": "Gabinete Cougar",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_21547_Gabinete_Cougar_Conquer_2_4aca886c-grn.jpg",
+    "description": "Gabinete Cougar Conquer 2",
+    "stock": 5,
+    "price": 70700,
+    "category": "Gabinetes"
+  },
+
+  {
+    "id": 19,
+    "name": "Mother Asus ROG X570",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_24347_Mother_ASUS_ROG_X570_CROSSHAIR_VIII_AM4_DARK_HERO_05075ed7-grn.jpg",
+    "description": "Mother ASUS ROG X570 CROSSHAIR VIII AM4 DARK HERO",
+    "stock": 3,
+    "price": 109350,
+    "category": "Mothers"
+  },
+  {
+    "id": 20,
+    "name": "Mother Asus ROG Crosshair",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31324_Mother_ASUS_ROG_CROSSHAIR_VIII_HERO__WI-FI__fc68faa8-grn.jpg",
+    "description": "Mother ASUS ROG CROSSHAIR VIII HERO (WI-FI)",
+    "stock": 3,
+    "price": 92800,
+    "category": "Mothers"
+  },
+  {
+    "id": 21,
+    "name": "Mother Asusrock B450",
+    "image": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_12887_Mother_Asrock_B450_Steel_Legend_AM4_RGB_Dual_M.2_Dual_USB_3.1_bef7a4f7-grn.jpg",
+    "description": "Mother Asrock B450 Steel Legend AM4 RGB Dual M.2 Dual USB 3.1",
+    "stock": 10,
+    "price": 26000,
+    "category": "Mothers"
   }
 ]
