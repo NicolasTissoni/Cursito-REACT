@@ -26,7 +26,7 @@ function App() {
                             <NavBarContainer />
                             <Notification />
                             <Routes>
-                                <Route path="/" element={<ElementsContainer />} />
+                                <Route path="/Home" element={<ElementsContainer />} />
                                 <Route path="/element/:id" element={<ElementByIdContainer />} />
                                 <Route path="/:category" element={<ElementsContainer />} />
                                 <Route path="/cart" element={<CartContainer />} />
