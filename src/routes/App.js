@@ -26,6 +26,7 @@ function App() {
                             <NavBarContainer />
                             <Notification />
                             <Routes>
+                                <Route path="/Curso-React" element={Home} />
                                 <Route path="/" element={<ElementsContainer />} />
                                 <Route path="/element/:id" element={<ElementByIdContainer />} />
                                 <Route path="/:category" element={<ElementsContainer />} />
