@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name": "Home",
+        "url": ""
+    },
+    {
+        "id": "2",
+        "name": "Procesadores",
+        "url": "Procesadores"
+    },
+    {
+        "id": "3",
+        "name": "Graficas",
+        "url": "Graficas"
+    },
+    {
+        "id": "4",
+        "name": "Rams",
+        "url": "Rams"
+    },
+    {
+        "id": "5",
+        "name": "Discos",
+        "url": "Discos"
+    },
+    {
+        "id": "6",
+        "name": "Fuentes",
+        "url": "Fuentes"
+    },
+    {
+        "id": "7",
+        "name": "Gabinetes",
+        "url": "Gabinetes"
+    },
+    {
+        "id": "8",
+        "name": "Mothers",
+        "url": "Mothers"
+    }
+]
