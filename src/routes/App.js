@@ -26,13 +26,13 @@ function App() {
                             <NavBarContainer />
                             <Notification />
                                 <Routes>
-                                    <Route path="/" element={<ElementsContainer />} />
-                                    <Route path="/element/:id" element={<ElementByIdContainer />} />
-                                    <Route path="/:category" element={<ElementsContainer />} />
-                                    <Route path="/cart" element={<CartContainer />} />
-                                    <Route path="/checkout" element={<Checkout />} />
-                                    <Route path="/dashboard" element={<DashBoardContainer />} />
-                                </Routes>       
+                                    <Route path="/Curso-React/" element={<ElementsContainer />} />
+                                    <Route path="/Curso-React/element/:id" element={<ElementByIdContainer />} />
+                                    <Route path="/Curso-React/:category" element={<ElementsContainer />} />
+                                    <Route path="/Curso-React/cart" element={<CartContainer />} />
+                                    <Route path="/Curso-React/checkout" element={<Checkout />} />
+                                    <Route path="/Curso-React/dashboard" element={<DashBoardContainer />} />
+                                </Routes>
                             <Footer />
                         </BrowserRouter>
                     </CartContext>

@@ -51,7 +51,7 @@ const ListNavBar = ({ categories }) => {
       {categories.map((categories) => {
         return (
             <li className={toggleClassCheck} key={categories.id}>
-              <Link to={`/${categories.url}`}>{categories.name}</Link>
+              <Link to={`/Curso-React/${categories.url}`}>{categories.name}</Link>
             </li>
         );
       })}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { getFirebase } from '../../service/productService';
+import { getCategories } from '../../components/category/getCategories';
 
 import ListNavBar from './listNavBar/ListNavBar';
 
@@ -9,7 +9,7 @@ const NavBarContainer = () => {
     const [loading, setLoading] = useState([false]);
 
     useEffect(() => {
-        getFirebase('categories')
+        getCategories()
             .then((categories) => {
                 setCategories(categories);
                 setLoading(true);
