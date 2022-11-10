@@ -43,12 +43,12 @@ const DashBoardContainer = () => {
                             <Loader />
                         </div>
                     )}
-                    <ButtonRedirect text="Volver al inicio" toLink="/" />
+                    <ButtonRedirect text="Volver al inicio" toLink="/Curso-React/" />
                 </div>
             ) : (
                 <div className='button'>
                     <h2>No compraste nada aún</h2>
-                    <ButtonRedirect text="Volver al inicio" toLink="/" />
+                    <ButtonRedirect text="Volver al inicio" toLink="/Curso-React/" />
                 </div>
             )}
             <ButtonScroll />

@@ -43,7 +43,7 @@ const ListNavBar = ({ categories }) => {
           <span className="text">MENU</span>
         </button>
 
-        <Link className="cart-reditect" to={"/cart"}>
+        <Link className="cart-reditect" to={"/Curso-React/cart"}>
           <i className="fa-solid fa-cart-shopping"></i>
           <p>{getCount()}</p>
         </Link>

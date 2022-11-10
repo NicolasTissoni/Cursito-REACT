@@ -10,7 +10,7 @@ const Elements = ({ element }) => {
             </div>
             <h2 className="name">{element.name}</h2>
             <h3 className="price">${element.price}</h3>
-            <ButtonRedirect text="Ver Detalles" toLink={`/element/${element.id}`} />
+            <ButtonRedirect text="Ver Detalles" toLink={`/Curso-React/element/${element.id}`} />
         </div>
     );
 };

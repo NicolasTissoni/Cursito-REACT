@@ -40,7 +40,7 @@ const ListCart = ({ items }) => {
             
             <div className='buttons-cart'>
                 <button className='button-eliminar-todo' onClick={clearItems}>Eliminar todos los items</button>
-                <ButtonRedirect text="Finalizar compra" toLink="/checkout" />
+                <ButtonRedirect text="Finalizar compra" toLink="/Curso-React/checkout" />
             </div>
         </div>
     );

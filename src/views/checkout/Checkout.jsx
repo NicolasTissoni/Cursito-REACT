@@ -96,7 +96,7 @@ const Checkout = () => {
             .finally(() => {
                 updateEmail(purchase.clienteInfo.email);
                 setTimeout(() => {
-                    navigate('/dashboard');
+                    navigate('/Curso-React/dashboard');
                     clearItems();
                 }, 4000);
                 setProcessingOrder(true);

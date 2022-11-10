@@ -55,8 +55,8 @@ const ElementByIdContainer = () => {
                         <Count stock={element.stock} onAdd={agregar} />
                     ) : (
                         <div className="buttons">
-                            <ButtonRedirect text={'Volver'} toLink={'/'} />
-                            <ButtonRedirect text={'Ir al Carrito'} toLink={'/cart'} />
+                            <ButtonRedirect text={'Volver'} toLink={'/Curso-React/'} />
+                            <ButtonRedirect text={'Ir al Carrito'} toLink={'/Curso-React/cart'} />
                         </div>
                     )}
                 </>
